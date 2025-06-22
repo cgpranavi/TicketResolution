@@ -29,7 +29,7 @@ def get_ticket_data(ticket_id: str) -> dict:
 root_agent = Agent(
     name="ticket_resolution_agent",
     model="gemini-2.0-flash",
-    description="Agent to answer questions about the time and weather in a city.",
-    instruction="I can answer your questions about the time and weather in a city.",
+    description="Agent to answer questions about the ticket resolution process.",
+    instruction="I can answer your questions about the ticket resolution process.",
     tools=[get_ticket_data]
 )
