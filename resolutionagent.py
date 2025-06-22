@@ -41,4 +41,5 @@ root_agent = Agent(
         "You are a helpful agent who can answer user questions about the ticket."
     ),
     tools=[get_ticket_data],
+    # tools=[Tool(function=get_ticket_data)],
 )
